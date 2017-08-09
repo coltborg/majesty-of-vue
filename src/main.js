@@ -5,6 +5,8 @@ import App from './App';
 
 Vue.config.productionTip = false;
 
+Vue.filter('snitch', hero => `${hero.secretId} is ${hero.firstName} ${hero.lastName} in real life`);
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
