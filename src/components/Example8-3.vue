@@ -10,6 +10,12 @@
         <example83-food @voted="countVote" name="Pizza 🍕" color="btn-warning"></example83-food>
         <example83-food @voted="countVote" name="Ramen 🍜" color="btn-default"></example83-food>
       </div>
+      <h2>Log:</h2>
+      <ul class="list-group">
+        <li class="list-group-item" v-for="(vote, index) in log" :key="index">
+          {{ vote }}
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -25,11 +31,13 @@ export default {
   data() {
     return {
       votes: 0,
+      log: [],
     };
   },
   methods: {
-    countVote() {
+    countVote(food) {
       this.votes += 1;
+      this.log.push(`${food} received a vote.`);
     },
   },
 };

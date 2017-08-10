@@ -22,9 +22,9 @@ export default {
     };
   },
   methods: {
-    voted() {
+    voted(event) {
       this.votes += 1;
-      this.$emit('voted');
+      this.$emit('voted', event.srcElement.textContent);
     },
   },
 };
