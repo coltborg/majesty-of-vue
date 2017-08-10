@@ -2,10 +2,9 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import App from './App';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 Vue.config.productionTip = false;
-
-Vue.filter('snitch', hero => `${hero.secretId} is ${hero.firstName} ${hero.lastName} in real life`);
 
 /* eslint-disable no-new */
 new Vue({
