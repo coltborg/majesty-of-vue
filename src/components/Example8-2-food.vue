@@ -1,5 +1,5 @@
 <template>
-  <button class="btn btn-success btn-lg" @click="voted">Vote</button>
+  <button class="btn btn-info btn-lg" @click="voted">Sushi 🍣</button>
 </template>
 
 <script>
