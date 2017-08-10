@@ -25,8 +25,7 @@ export default {
   },
   created() {
     this.$on('voted', () => {
-      /* eslint-disable no-plusplus */
-      this.votes++;
+      this.votes += 1;
     });
   },
 };
