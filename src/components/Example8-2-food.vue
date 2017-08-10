@@ -5,9 +5,6 @@
 <script>
 export default {
   name: 'Example8-2',
-  data() {
-
-  },
   methods: {
     voted() {
       this.$emit('voted');
