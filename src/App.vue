@@ -3,18 +3,22 @@
     <hello></hello>
     <hr>
     <homework65></homework65>
+    <hr>
+    <Example81></Example81>
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello';
 import Homework65 from './components/Homework6-5';
+import Example81 from './components/Example8-1';
 
 export default {
   name: 'app',
   components: {
     Hello,
     Homework65,
+    Example81,
   },
 };
 </script>
